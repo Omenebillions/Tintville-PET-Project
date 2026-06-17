@@ -23,6 +23,7 @@ import {
   Bell,
   Menu,
   X,
+  TrendingUp,
 } from "lucide-react";
 import React, { useState } from "react";
 
@@ -32,6 +33,7 @@ import Cycles from "./pages/Cycles";
 import Ledger from "./pages/Ledger";
 import SettingsPage from "./pages/SettingsPage";
 import Proposal from "./pages/Proposal";
+import AdminFinances from "./pages/AdminFinances";
 // import Investors from './pages/Investors';
 
 function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (val: boolean) => void }) {
@@ -42,7 +44,10 @@ function Sidebar({ isOpen, setIsOpen }: { isOpen: boolean; setIsOpen: (val: bool
   const links = [
     { name: "Overview / Pitch", path: "/proposal", icon: FileText },
     { name: "Dashboard", path: "/", icon: LayoutDashboard },
-    ...(role === "admin" ? [{ name: "Funding / Investment", path: "/cycles", icon: RefreshCcw }] : []),
+    ...(role === "admin" ? [
+      { name: "Funding / Investment", path: "/cycles", icon: RefreshCcw },
+      { name: "Corporate Finances", path: "/corporate-finances", icon: TrendingUp }
+    ] : []),
     { name: "Ledger", path: "/ledger", icon: Wallet },
     ...(role === "admin"
       ? [{ name: "Settings", path: "/settings", icon: Settings }]
@@ -216,6 +221,7 @@ function Layout() {
             <Route path="/proposal" element={<Proposal />} />
             <Route path="/cycles/*" element={<Cycles />} />
             <Route path="/ledger" element={<Ledger />} />
+            <Route path="/corporate-finances" element={<AdminFinances />} />
             <Route path="/settings" element={<SettingsPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>

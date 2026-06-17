@@ -209,7 +209,7 @@ export default function Proposal() {
 
         <div className="space-y-8">
           <div>
-            <h4 className="font-bold text-lg text-natural-900 mb-4 bg-natural-100 inline-block px-4 py-1 rounded-full">Option 1 — Profit Share Per Trip (Recommended)</h4>
+            <h4 className="font-bold text-lg text-natural-900 mb-4 bg-natural-100 inline-block px-4 py-1 rounded-full">Option 1 — 70/30 Profit Share Per Trip (Recommended)</h4>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
               <div className="bg-natural-50 p-4 rounded-xl border border-natural-200">
                 <div className="text-[10px] uppercase font-bold text-natural-500">Investment</div>
@@ -217,7 +217,7 @@ export default function Proposal() {
               </div>
               <div className="bg-natural-50 p-4 rounded-xl border border-natural-200">
                 <div className="text-[10px] uppercase font-bold text-natural-500">Investor Share</div>
-                <div className="text-base font-bold text-primary">40% of net</div>
+                <div className="text-base font-bold text-primary">30% of net</div>
               </div>
                <div className="bg-natural-50 p-4 rounded-xl border border-natural-200">
                 <div className="text-[10px] uppercase font-bold text-natural-500">Repayment Target</div>
@@ -235,35 +235,35 @@ export default function Proposal() {
                   <tr>
                     <th className="px-6 py-3">Load</th>
                     <th className="px-6 py-3">Net Profit</th>
-                    <th className="px-6 py-3 text-primary bg-primary/5">Investor 40%</th>
-                    <th className="px-6 py-3">Operator 60%</th>
+                    <th className="px-6 py-3 text-primary bg-primary/5">Investor 30%</th>
+                    <th className="px-6 py-3">Operator 70%</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-natural-200">
                   <tr className="bg-white">
                     <td className="px-6 py-3 font-medium">1,500kg</td>
                     <td className="px-6 py-3">₦65,000</td>
-                    <td className="px-6 py-3 font-bold text-primary bg-primary/5">₦26,000</td>
-                    <td className="px-6 py-3">₦39,000</td>
+                    <td className="px-6 py-3 font-bold text-primary bg-primary/5">₦19,500</td>
+                    <td className="px-6 py-3">₦45,500</td>
                   </tr>
                   <tr className="bg-white">
                     <td className="px-6 py-3 font-medium">2,500kg</td>
                     <td className="px-6 py-3">₦275,000</td>
-                    <td className="px-6 py-3 font-bold text-primary bg-primary/5">₦110,000</td>
-                    <td className="px-6 py-3">₦165,000</td>
+                    <td className="px-6 py-3 font-bold text-primary bg-primary/5">₦82,500</td>
+                    <td className="px-6 py-3">₦192,500</td>
                   </tr>
                   <tr className="bg-primary/5 font-bold">
                     <td className="px-6 py-3">3,500kg</td>
                     <td className="px-6 py-3">₦485,000</td>
-                    <td className="px-6 py-3 text-primary bg-primary/10">₦194,000</td>
-                    <td className="px-6 py-3">₦291,000</td>
+                    <td className="px-6 py-3 text-primary bg-primary/10">₦145,500</td>
+                    <td className="px-6 py-3">₦339,500</td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <p className="text-sm font-bold text-natural-800">
-              At 2 full trips per month investor earns: <span className="text-green-600">₦388,000/month</span>. 
-              Full ₦3.2M recovered in approximately: 8–9 trips.
+              At 2 full trips per month investor earns: <span className="text-green-600">₦291,000/month</span>. 
+              Full ₦3.2M recovered in approximately: 22 trips (~11 months).
             </p>
           </div>
           

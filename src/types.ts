@@ -23,7 +23,30 @@ export interface Notification {
   read?: boolean;
 }
 
-export type CycleStatus = "collation" | "transport" | "payment_awaited" | "completed";
+export type CycleStatus = "awaiting_funds" | "collation" | "transport" | "payment_awaited" | "completed";
+
+export interface FundingItem {
+  name: string;
+  amount: number;
+  isEquipment?: boolean;
+}
+
+export interface CycleInvestor {
+  id: string;
+  name: string;
+  amount: number;
+  approved: boolean;
+  date: string;
+  paymentProof?: string;
+}
+
+export interface CycleStageExpense {
+  id: string;
+  name: string;
+  amount: number;
+  stage: CycleStatus;
+  date: string;
+}
 
 export interface Cycle {
   id: string;
@@ -47,6 +70,9 @@ export interface Cycle {
   netProfit: number;
   investorPayout: number;
   adminPayout: number;
+  fundingItems?: FundingItem[];
+  investors?: CycleInvestor[];
+  expensesList?: CycleStageExpense[];
 }
 
 export interface Transaction {
